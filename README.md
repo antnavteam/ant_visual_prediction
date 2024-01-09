@@ -3,27 +3,28 @@
 ## Description
 
 This repository contains the data and codes necessary to obtain the results from the article "Ants integrate proprioception, visual context and efference copies to make robust predictions" by O. Dauzere-Peres & A. Wystrach (2023).
-The raw data files contained in this repository were collected by a virtual reality set-up running with Unity 2020.1 (free software) envrironment controlling the rotation of the scene projected on an LED screen around an ant mounted on a trackball. Raw data consists of the movements of the ants on the ball, which were obtained by two sensors quantifying the movement of the ball along the three axis.
+The raw data files contained in this repository were collected by a virtual reality set-up running with Unity 2020.1 envrironment controlling the rotation of the scene projected on an LED screen around an ant mounted on a trackball. Raw data consists of the movements of the ants on the ball, which were obtained by two sensors quantifying the movement of the ball along the three axis.
 
 The python code files are used to process the raw data in order to vizualize them in the way it is shown in the articles figures, and to create the csv files with the variables used for statistical analysis. The cvs files produced are also uploaded in this repository.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To reproduce the results of the article you will need to download the files containing the raw data corresponding to the experiments you want to study and to install python (https://www.python.org/downloads/) to be able to execute the codes in this repository. 
+
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The file named "extract_raw_data.py" should be executed first. This file contains 4 sub-sections each corresponding to an experiment of the study. Each section should be executed after you downloaded the raw data corresponding to the associated experiment and you write the path to those files in the line instructed.
+This will compute the variables you will need to vizualize the data with the other python codes files, this means that the sub-section corresponding to the experiment you want the visualize always need to be the last one you executed. 
+To look at the angular velocity signals or trajectories of individual ants in differents experimental conditions you need the "trajectories_and_signal.py" file and to execute the corresponding function. 
+To obtain the mean oscillation cycles for an individual ant or at the population level in given experimental conditions you need the "mean_cycle.py" file and execute the corresponding function.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+Copyright (c) 2024 Océane Dauzere-Peres
 
----
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
