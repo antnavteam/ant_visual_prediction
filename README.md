@@ -2,8 +2,10 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This repository contains the data and codes necessary to obtain the results from the article "Ants integrate proprioception, visual context and efference copies to make robust predictions" by O. Dauzere-Peres & A. Wystrach (2023).
+The raw data files used were collected by a virtual reality set-up running with Unity 2020.1 (free software) envrironment controlling the rotation of the scene projected on an LED screen around an ant mounted on a trackball. Raw data consists of the movements of the ants on the ball, which were obtained by two sensors quantifying the movement of the ball along the three axis.
 
+The 
 - What was your motivation?
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
