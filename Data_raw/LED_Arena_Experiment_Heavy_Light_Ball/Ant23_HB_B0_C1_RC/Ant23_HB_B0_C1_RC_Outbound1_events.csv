@@ -1,0 +1,16 @@
+counter;event;
+start;12/14/2022 4:16:13 PM;
+1;antfreeze_off;
+34;mode_#5_activated;
+38;display_black;
+79;view_cleared;
+5,745;view_filled_RGBA(0.000, 0.000, 0.000, 1.000);
+5900;mode_#1_activated;
+5,903;display_live;
+5,948;rot_gain_set_to_0;
+5990;movedto_0;0
+5990;rotatedto_210degs;
+6,095;view_cleared;
+12,231;view_filled_RGBA(0.000, 0.000, 0.000, 1.000);
+13,261;SUCCESS;
+end;12/14/2022 4:21:07 PM;
