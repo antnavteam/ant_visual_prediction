@@ -1,0 +1,24 @@
+counter;event
+start;3/30/2022 3:23:38 PM
+1;antfreeze_off
+59;view_filled_RGBA(0.000, 0.000, 0.000, 1.000)
+4,618;view_filled_RGBA(0.000, 0.000, 0.000, 1.000)
+4,759;rot_gain_set_to_-1
+4,863;view_cleared
+8,847;view_filled_RGBA(0.000, 0.000, 0.000, 1.000)
+8,942;rot_gain_set_to_5
+9,513;view_cleared
+13,605;view_filled_RGBA(0.000, 0.000, 0.000, 1.000)
+13,771;rot_gain_set_to_0
+14,028;movedto_0;0
+14,028;rotatedto_130degs
+14,303;view_cleared
+18,446;view_filled_RGBA(0.000, 0.000, 0.000, 1.000)
+18,569;rot_gain_set_to_3
+19,098;view_cleared
+23,182;view_filled_RGBA(0.000, 0.000, 0.000, 1.000)
+23,270;rot_gain_set_to_1
+23,840;view_cleared
+27,335;view_filled_RGBA(0.000, 0.000, 0.000, 1.000)
+27,412;SUCCESS
+end;3/30/2022 3:33:43 PM
