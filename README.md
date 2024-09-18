@@ -17,7 +17,7 @@ Python packages necessary to run the python codes in this repository are specifi
 
 ## Usage
 
-The file named "extract_raw_data.py" should be executed first. This file contains 4 sub-sections each corresponding to an experiment of the study (3 from the main study and the last one in supplementary). Each section should be executed after you downloaded the raw data corresponding to the associated experiment and you write the path to those files in the line instructed.
+The file named "extract_raw_data.py" should be executed first. This file contains 5 sub-sections each corresponding to an experiment of the study (3 from the main study and the two last ones in supplementary). Each section should be executed after you downloaded the raw data corresponding to the associated experiment and you write the path to those files in the line instructed.
 
 This will compute the variables you will need to visualize the ants movements with the other python codes files, as well as produce the csv files used for statistical analysis. If you want to check and compare with the csv files used in the study for statistical analysis, they are also uploaded in the repository.
 This also means that the sub-section corresponding to the experiment you want the visualize always need to be the last one you executed so that the global variables correspond to the one of this experiment. 
