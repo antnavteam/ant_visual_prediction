@@ -1,4 +1,4 @@
-# Ants integrate proprioception, visual context and efference copies to make robust predictions
+# Ants integrate proprioception as well as visual context and efference copies to make robust predictions
 
 ## Description
 
