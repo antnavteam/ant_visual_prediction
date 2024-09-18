@@ -3,9 +3,10 @@
 ## Description
 
 This repository contains the data and codes necessary to obtain the results from the article "Ants integrate proprioception, visual context and efference copies to make robust predictions" by O. Dauzere-Peres & A. Wystrach (2023).
-The raw data files contained in this repository were collected by a virtual reality set-up running with Unity 2020.1 (c) envrironment controlling the rotation of the scene projected on an LED screen around an ant mounted on a trackball. Raw data for each trial consists of :
+The raw data files contained in this repository were collected by a virtual reality set-up running with Unity 2020.1 (c) envrironment controlling the rotation of the scene projected on an LED screen around an ant mounted on a trackball. In nearly all experiments, raw data for each trial consists of :
 - a csv file containing the movements of the ants on the ball across time obtained by two sensors quantifying the movements of the ball along the three axis 
 - a csv file containing the timestamps of the changes in the visual conditions
+For the experiment with ants freely able to rotate, the raw data consists of the X, Y virtual trajectory of the ants across time for each condition.
 
 The python code files are used to process the raw data in order to visualize them in the way it is shown in the articles figures, and to create the csv files with the variables used for statistical analysis. The cvs files produced are also uploaded in this repository.
 
