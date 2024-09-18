@@ -6,7 +6,6 @@ Created on Tue Jan  9 13:23:26 2024
 @author: Oceane DAUZERE-PERES
 """
 
-mport pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -19,7 +18,7 @@ def mean_individual_cycle(idt,event,list_cycle,list_conditions1,list_conditions2
     list_cycle is a list of the conditions of mean oscillations cycle that we are computing at the population level, it is only updated if the individual mean oscillation cycle computed correspond to new conditions
     pt_synchro correponds to a dictionnary of indexes correponding to the middle of the mean oscillation cyles for each cycle type in list_cycle. We are adding to the dictionnary the index of the middle of individual mean oscillation cycle computed.
     oscillations is a dictionnary containing lists corresponding to mean oscillation cycles for each cycle type in list_cycle. We are adding to the dictionnary the individual mean oscillation cycle computed.
-    """"
+    """
     print(idt)
     e=event
     Ang_speed=Ang_speed_smooth[idt][starts[idt][e]:ends[idt][e]-20] 
@@ -28,26 +27,7 @@ def mean_individual_cycle(idt,event,list_cycle,list_conditions1,list_conditions2
     maxs=[]
     mins=[]
     
-    slope = Ang_speed[1]-Ang_speed[0]
-    a=Ang_speed[0]
-#    for i in range (1,len(Ang_speed)) :
-#        if (Ang_speed[i]-Ang_speed[i-1])*slope<0 :
-#            if np.abs(Ang_speed[i]-a)>20: #enough amplitude to be considered an oscillation
-#                if slope >0 and len(mins)==len(maxs):
-#                    maxs+=[i-1]
-#                    a=Ang_speed[i]
-#                if slope <0  and len(mins)<len(maxs):
-#                    mins+=[i-1]
-#                    a=Ang_speed[i]
-#                if len(maxs)==len(mins) and len(maxs)!=0: # new oscillation when a new local minimum and local maximum has been detected
-#                    middle=np.mean(Ang_speed[maxs[-1]:mins[-1]]) 
-#                    for j in range (maxs[-1],mins[-1]):
-#                        if Ang_speed[j-1]>=middle and Ang_speed[j]<=middle:
-#                            osci_middle+=[j]
-#        slope=Ang_speed[i]-Ang_speed[i-1]
-#
-    
-    ## Detection of the oscillations in the signal
+    # Detection of the oscillations in the signal
     slope = Ang_speed[1]-Ang_speed[0]
     a=Ang_speed[0]
     baseline=np.mean(Ang_speed)
@@ -102,7 +82,7 @@ def mean_population_cycle(list_idt,list_cycle,list_conditions1,list_conditions2)
     """
     Compute the mean oscillation cycles at the population level (using mean oscillation cycles at the individual level) corresponding to the combination of conditions in list_conditions1 and list_conditions2.
     list_cycle is a list of the conditions of mean oscillations cycle that we are computing at the population level (corresponding to combinationsof conditions in list_conditions1 and list_conditions2).
-    """"
+    """
     list_cycle=[]
     pt_synchro={}
     oscillations={}
@@ -139,12 +119,13 @@ def mean_population_cycle(list_idt,list_cycle,list_conditions1,list_conditions2)
 ##################################### RUN THIS CODE AFTER EXTRACTING THE DATA FROM THE DATASET OF THE EXPERIMENT YOU WANT TO LOOK AT #########################################
 
 colors=["purple","red","orange","green","b","black"]
+list_cycle=[]
 
 ## Figure corresponding to the ones in the article (RUN WITH THE DATASET OF THE GAIN EXPERIMENT)
 mean_population_cycle(list_idt,list_cycle,["2E"],["-1","0","1","3","5","B"])
-mean_population_cycle(list_idt,list_cycle,["2E","1E"],["B"])
-mean_population_cycle(list_idt,list_cycle,["2E","1E"],["5"])
-mean_population_cycle(list_idt,list_cycle,["2E","1E"],["0"])
+# mean_population_cycle(list_idt,list_cycle,["2E","1E"],["B"])
+# mean_population_cycle(list_idt,list_cycle,["2E","1E"],["5"])
+# mean_population_cycle(list_idt,list_cycle,["2E","1E"],["0"])
 
 # For list_conditions1 (3rth positional argument) write the list of condition between trials as specified in the name of the file :
 # for experiment on the gain : two eyes="2E", right eye covered ="RE", left eye covered="LE"  /!\ if you want to combine RE and LE write "1E" (= 1 eye covered)
@@ -156,6 +137,7 @@ mean_population_cycle(list_idt,list_cycle,["2E","1E"],["0"])
 # for experiment on the visual structure : gain 2.5 = "2", gain 0 = "0", homogeneous black = "B", homogeneous white = "W", horizontal bars = "H", vertical bars = "V"
 # for experiment on the weight of the ball : in the dark = "B", gain 0 = "0"
 # for supplementary experiment on the number of bars : homogeneous black = "B", horizontal bars = "H", 1 bar verical white in the front = "W", 1 vertical bar black in the front = "1", 4 vertical bars = "4", 8 vertical bars = "8"
+
 
 
 
